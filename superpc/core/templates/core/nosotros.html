@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B01010;">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'registrarse' %}">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'ingresar' %}">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-md-6">
+                <img src="static/core/img/ubicacion.png"  width="500px" height="300px" alt="revision completa">
+            </div>
+            <br>
+            <div class="col-md-6 col-md-6">
+                <h2>Datos de la Empresa..</h2>
+                <p>Cerca del metro Santa Ana
+                    Caminando por San Pablo.
+                    Local: 456.
+                    horario de atención: De Lunes a Domingo de 8:00 a 22:00.
+                </p>
+            </div>
+            <div class="col-md-6 col-md-6">
+                <h2>Nuestra Misión.</h2>
+                <p>"Nuestra misión es proporcionar servicios de reparación y mantenimiento automotriz de alta calidad, confiables y accesibles para nuestros clientes. Nos comprometemos a utilizar tecnología de vanguardia y técnicas avanzadas para garantizar la satisfacción del cliente y la seguridad en la carretera. Nos esforzamos por ofrecer un servicio excepcional, con personal capacitado y dedicado, buscando siempre superar las expectativas de nuestros clientes y establecer relaciones a largo plazo basadas en la confianza y la integridad."
+                </p>
+            </div>
+            <div class="col-md-6 col-md-6">
+                <img src="static/core/img/logo.webp"  width="500px" height="300px" alt="revision completa">
+            </div>
+            <div class="col-md-6 col-md-6">
+                <img src="static/core/img/vision.png"  width="500px" height="300px" alt="revision completa">
+            </div>
+            <div class="col-md-6 col-md-6">
+                <h2>Nuestra Visión.</h2>
+                <p>"Nos visualizamos como líderes reconocidos en el sector de servicios automotrices, siendo la primera opción para los propietarios de vehículos que buscan soluciones confiables y de alta calidad. Nos esforzamos por expandir nuestra presencia y reputación, brindando servicios innovadores y adaptándonos continuamente a las necesidades cambiantes del mercado. Aspiramos a ser un centro de excelencia en el que la integridad, la transparencia y el compromiso con la satisfacción del cliente sean los pilares de nuestro éxito. Además, buscamos contribuir positivamente a la comunidad y al medio ambiente, manteniendo prácticas sostenibles en todas nuestras operaciones."</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
